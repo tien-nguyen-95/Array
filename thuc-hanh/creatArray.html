@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2><i>Sample Screen:</i></h2>
+    <input type="text" id="input" placeholder="Nhập phần tử" />
+    <button type="button" onclick="add()">Add</button>
+    <button type="button" onclick="disPlay()">Display</button>
+    <div id="result"></div>
+    <script>
+        let arr=[];
+        function add(){
+            let newE=document.getElementById("input").value;
+            arr.push(newE);
+            document.getElementById("input").value="";
+        }
+        function disPlay(){ 
+            let show ="";
+            for(let i=0;i<arr.length;i++){
+                show+="Element "+i+" = "+arr[i]+"<br>";
+            }
+            document.getElementById("result").innerHTML=show;
+        }
+    </script>
+</body>
+</html>
