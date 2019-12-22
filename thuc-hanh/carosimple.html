@@ -28,13 +28,13 @@
             data=""
             board[row-1][col-1]="x";
             for(let i=0;i<5;i++){
-            for(let j=0;j<5;j++){
+                for(let j=0;j<5;j++){
                 data+=board[i][j]+"&nbsp&nbsp&nbsp&nbsp";
+                }
+                data+="<br>";
             }
-            data+="<br>";
-        }
-        data += "<br/><input type='button' value='Change Value' onclick='changeValue()'>";
-        document.getElementById("show").innerHTML=data;
+            data += "<br/><input type='button' value='Change Value' onclick='changeValue()'>";
+            document.getElementById("show").innerHTML=data;
         }
     </script>
 </body>
