@@ -8,15 +8,16 @@
 </head>
 <body>
     <script>
-        let arr=[1,3,10,20,45,'V',2,88,80,62];
+        let arr=[1,3,10,20,45,77,2,88,80,62];
+        let V=parseInt(prompt("nhập số V: "));
         let flag=false;
         for(let ar of arr){
-            if(ar==='V'){
+            if(ar===V){
                 flag=true;
                 break;
             }
         }
-        if(flag==true){
+        if(flag){
             document.write("V is in the array");
         }
         else{
