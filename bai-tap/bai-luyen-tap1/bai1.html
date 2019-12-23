@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,3,10,20,45,49,2,88,80,62];
+        let count=0;
+        document.write("các phần tử lớn hơn hoặc bằng 10 là:<br> ");
+        for (let value of arr) {
+            if(value>=10){
+                document.write(value+"<br>");
+                count++;
+            }
+        }
+        document.write("Tổng số phần tử lớn hơn hoặc bằng 10 là :" +count+" phần tử");
+    </script>
+</body>
+</html>
