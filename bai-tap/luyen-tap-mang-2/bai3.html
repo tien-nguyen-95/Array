@@ -9,10 +9,10 @@
 <body>
     <script>
     let arr = "abc123def45ghi6"
-    let str = arr.toString();
+
     let count = 0;
-    for(i=0;i<str.length;i++){
-        let check=Number.isInteger(parseInt(str[i]));
+    for(i=0;i<arr.length;i++){
+        let check=Number.isInteger(parseInt(arr[i]));
         if(check){
             count++;
         }
